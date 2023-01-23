@@ -1,0 +1,255 @@
+
+.bespokoev {
+    padding: 45px 0;
+}
+
+.bespokoev .main__btn:after {
+    display:none;
+}
+
+.bespokoev .main__btn{
+    margin: auto;
+    display: inherit;
+    max-width: 300px;
+    margin-top: 30px;
+}
+.bespokoev .main__link{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.bespokoev__block {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:35px;
+    @media(max-width:1024px){
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+.bespokoev__item-shadow {
+    box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.3);
+    padding: 20px;
+}
+.bespokoev__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width:555px){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.bespokoev__text p{
+    @media(max-width:555px){
+       font-size: 16px;
+    }
+}
+.bespokoev-name {
+    font-size: clamp(1rem, 0.614rem + 1.93vw, 2.063rem);
+    margin: 0;
+    
+}
+.bespokoev__jobtitle{
+    flex: 0 1 70%;
+}
+.bespokoev__job{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.bespokoev-shadow{
+    box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.3);
+    padding: 35px;
+    @media(max-width:1024px){
+        text-align: center;
+    }
+}
+.bespokoev-img {
+}
+.bespokoev__text {
+    position: relative;
+    padding: 0 60px;
+}
+.bespokoev__text::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../../images/dist/quotes.png);
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 49px;
+    top: 0;
+    left: 0;
+}
+.bespokoev__text::after {
+    content: '';
+    position: absolute;
+    background-image: url(../../../images/dist/quotes.png);
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 49px;
+    bottom: 0;
+    right: 30px;
+    transform: rotateY(180deg);
+}
+
+.implantacia {
+    font-size: 24px;
+    font-weight: 700;
+}
+.implantacia__price {
+    font-size: clamp(1rem, 0.023rem + 4.89vw, 3.688rem);
+    font-weight: 700;
+    color: #63a455;
+    line-height: 1em;
+}
+.implantacia__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 100px;
+    @media(max-width:1024px){
+        display: flex;
+    flex-direction: column;
+    gap: 80px;
+    }
+}
+.implantacia__anest{
+    position: relative;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 700;
+    padding-left: 60px;
+}
+
+.implantacia__anest:before{
+    content: '';
+    position: absolute;
+    background-image: url(../../../images/dist/doc-impl.png);
+    background-repeat: no-repeat;
+    height: 116px;
+    width: 97px;
+    top: -23px;
+    left: -40px;
+}
+
+.implantacia__work{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2em;
+    padding-left: 60px;
+}
+.implantacia__work::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../../images/dist/doc-work.png);
+    background-repeat: no-repeat;
+    height: 71px;
+    width: 119px;
+    top: -7px;
+    left: -70px;
+    @media (max-width:1024px) {
+        top: -20px;
+        left: -30px;
+    }
+}
+.ipmlantacia__item {
+}
+.bespokoev__bottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap:20px;
+    @media(max-width:1024px){
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media(max-width:840px){
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media(max-width:570px){
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.bespokoev__bottom h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.bespokoev__nubmer {
+    position: relative;
+    font-size: 42px;
+    line-height: 1em;
+    color: #63a455;
+    font-weight: 700;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.years17{
+    margin-left: 30px;
+    padding-left: 50px;
+}
+.years17::before{
+    position: absolute;
+    content: '';
+    background-image: url(../../../images/dist/icon-17.png);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 61px;
+    top: -20px;
+    left: 10px;
+}
+
+.years13::before{
+    position: absolute;
+    content: '';
+    background-image: url(../../../images/dist/icon-13.png);
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 56px;
+    top: -13px;
+    left: 15px;
+}
+.impla1000{
+    line-height: 25px;
+}
+.impla1000::before{
+    position: absolute;
+    content: '';
+    background-image: url(../../../images/dist/icon1000.png);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 37px;
+    top: -13px;
+    left: 15px;
+}
+
+.oper300{
+    line-height: 25px;
+    padding-left: 70px;
+}
+.oper300::before{
+    position: absolute;
+    content: '';
+    background-image: url(../../../images/dist/icon300.png);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 61px;
+    top: -13px;
+    left: 15px;
+}
+.smalltext{
+    font-size: 29px;
+}
+
+
+
+////// test2 ///// 
+
