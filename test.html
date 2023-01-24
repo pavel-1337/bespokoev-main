@@ -16,7 +16,8 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/logo.png">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/bvi.min.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -25,6 +26,33 @@
 
 <body>
     <div class="bg-test">
+
+        <header class="header__mobile">
+            <div class="header__mobile-logo">
+                <img src="images/dist/logo.png" alt="Логотип">
+            </div>
+            <div class="header__mobile-menu">
+                <div class="header__nav">
+                    
+                    <nav class="nav" data-menu>
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">Главная</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Специалисты</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Гарантии</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                            <li class="nav__item"><a href="/contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+                        <span class="burger__line"></span>
+                      </button>
+
+                </div>
+            </div>
+        </header>
+
         <header class="header2">
             <div class="container header2__container">
                 <div class="header2__flex">
@@ -42,8 +70,42 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="header__nav">
+                    <nav class="nav__pc">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item"><a href="/test.html" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Специалисты</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Гарантии</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                            <li class="nav__item"><a href="/contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__blind">
+                        <a class="bvi-open blind__link">
+                        <svg class="blind-svg" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;"><g><g><path d="M609.608,315.426c3.19-5.874,3.19-12.979,0-18.853c-58.464-107.643-172.5-180.72-303.607-180.72
+                            S60.857,188.931,2.393,296.573c-3.19,5.874-3.19,12.979,0,18.853C60.858,423.069,174.892,496.147,306,496.147
+                            S551.143,423.069,609.608,315.426z M306,451.855c-80.554,0-145.855-65.302-145.855-145.855S225.446,160.144,306,160.144
+                            S451.856,225.446,451.856,306S386.554,451.855,306,451.855z"></path><path d="M306,231.67c-6.136,0-12.095,0.749-17.798,2.15c5.841,6.76,9.383,15.563,9.383,25.198c0,21.3-17.267,38.568-38.568,38.568
+                            c-9.635,0-18.438-3.541-25.198-9.383c-1.401,5.703-2.15,11.662-2.15,17.798c0,41.052,33.279,74.33,74.33,74.33
+                            s74.33-33.279,74.33-74.33S347.052,231.67,306,231.67z"></path></g></g></svg>
+                        </a>
+                    </div>
+                    <div class="header__socials">
+                        <div class="header__socials__item"><img src="/images/dist/header/socials-vk.png" alt="Мы ВКонтакте"></div>
+                        <div class="header__socials__item"><img src="/images/dist/header/socials-tg.png" alt="Мы в Телеграм"></div>
+                        <div class="header__socials__item"><img src="/images/dist/header/socials-vb.png" alt="Мы в Вайбер"></div>
+                    </div>
+                </div>
+
             </div>
         </header>
+        <div class="breadcrumbs">
+            
+        </div>
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__quote">
